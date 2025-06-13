@@ -1,0 +1,94 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    color: #1a1a1a;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 32px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #3f51b5;
+    user-select: none;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px 32px;
+    box-shadow: 0 8px 24px rgb(63 81 181 / 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: box-shadow 0.3s ease;
+}
+.card:hover {
+    box-shadow: 0 12px 40px rgb(63 81 181 / 0.25);
+}
+
+.card-name {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #303f9f;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/* Material icon styling */
+.material-icons {
+    color: #3f51b5;
+    font-size: 20px;
+}
+/* Message styling */
+.card-message {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+/* Button styling */
+.add-feedback {
+    margin-top: 32px;
+    padding: 12px 24px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.add-feedback:hover {
+    background-color: #303f9f;
+}
+/* Responsive typography */
+@media (max-width: 640px) {
+    body {
+        padding: 16px;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+}

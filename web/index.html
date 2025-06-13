@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+      <div class="container" role="main">
+        <h1>FEEDBACK FORM</h1>
+        <form action="FeedbackServlet" method="post" aria-label="Feedback Form">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" autocomplete="name" required aria-required="true" />
+          <label for="message">Share Your Thoughts</label>
+          <textarea id="message" name="message" rows="5" cols="40" required aria-required="true"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <a href="Review.jsp" role="link" aria-label="View Feedback">View Feedback</a>
+      </div>
+    </body>
+</html>
